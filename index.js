@@ -28,16 +28,16 @@ while (n--) {
 	var txt = textFrame.texts[0].fillColor
 	
 	if (String(txt.space) == 'CMYK') {
-		var hex = cmykToHex(txt.colorValue[0], txt.colorValue[1], txt.colorValue[2], txt.colorValue[3]);
-		
-		alert(hex);
+		var textHex = cmykToHex(txt.colorValue[0], txt.colorValue[1], txt.colorValue[2], txt.colorValue[3]);
+		alert(textHex);
 
-		// find background color and run contras ratio check
+		// find background color HEX and run contras ratio check against textHex
 
-
-		// var score2 = hex('#e8148b', '#00afec');
+		// var score2 = hex(textHex, backgroundHex);
 		// alert(score(score2));
+
 	} else {
+		// ..
 		// TO DO
 	}
 
