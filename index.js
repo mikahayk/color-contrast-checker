@@ -1,14 +1,24 @@
 #include "cc.js";
 
+
+var score1 = rgb([0, 0, 0], [255, 255, 255]);
+alert(score1); // = 21
+alert(score(score1));
+
+var score2 = hex('#e8148b', '#00afec');
+alert(score2); // = 21
+alert(score(score2));
+
+
+
+/*
+
+
 //var root = Folder.selectDialog();
 //var folders = root.getFiles();
 //var f = folders.length;
 // alert("Found: " + f);
 
-alert(rgb([0, 0, 0], [255, 255, 255])); // = 21
-
-
-/*
 while (f--) {
 
     
